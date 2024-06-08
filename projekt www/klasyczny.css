@@ -1,0 +1,92 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('tlo_glowne.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+}
+header 
+{
+    font-size: 0.7rem;
+    padding: 0.4rem;
+    background-color: rgb(49, 47, 47);
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+#menu-toggle {
+    display: none;
+}
+.accordion-btn {
+    cursor: pointer; 
+    font-size: 1.5rem; 
+    order: -1;
+}
+#menu-toggle:checked + .accordion-btn::after {
+    content: '\25BC'; 
+}
+.menu_shown
+{
+    position: fixed;
+    top: 20;
+    left: 0;
+    height: 100vh; 
+    width: 12.5%; 
+    background-color: rgb(49, 47, 47);
+    z-index: 1000; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1
+{
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: serif;
+}
+div
+{
+    width: 120px; 
+    height: 120px; 
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000; 
+    padding: 3px; 
+    margin: 3px auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;
+    border-radius: 10px;
+}
+.img
+{
+    width: 120px; 
+    height: 120px; 
+}
+.corr
+{
+    background-color: #00ff15;
+}
+.incorr
+{
+    background-color: #ff0000;
+}
+.li
+{
+    display: flex;
+}
+.year_less
+{
+    background-image: url("arrows/top.jpg");
+}
+.year_more
+{
+    background-image: url("arrows/bot.jpg");
+}
+.year_same
+{
+    background-color: #00ff15;
+}
