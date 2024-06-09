@@ -21,18 +21,21 @@ function display_cart() {
     cart.forEach(produkt => {
         let button = document.createElement("button");
         button.textContent = "Usuń";
+        button.className = "usun";
         button.onclick = () => usun(produkt);
 
         let li1 = document.createElement("li");
         li1.textContent = produkt.name;
-
+        li1.className = "li1";
         let li2 = document.createElement("li");
         let img = document.createElement("img");
         img.src = produkt.image;
+        img.className = "img";
         li2.appendChild(img);
 
         let li3 = document.createElement("li");
         li3.textContent = "Cena: " + produkt.price + " zł";
+        li3.className = "li3";
 
         ul.appendChild(li1);
         ul.appendChild(li2);
@@ -93,9 +96,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const menu_link_1 = document.createElement('a');
         const menu_link_2 = document.createElement('a');
-        menu_link_1.href = 'sklep-strony.html';
+        menu_link_1.href = 'glowne_menu.html';
         menu_link_2.href = 'galeria_zadymiarzy.html';
-        menu_link_1.textContent = 'Sklep strony';
+        menu_link_1.textContent = 'Menu glowne';
         menu_link_2.textContent = 'Galeria zadymiarzy';
 
         menu_el_1.appendChild(menu_link_1);
