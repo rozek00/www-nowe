@@ -43,10 +43,18 @@ header
 #menu-toggle {
     display: none;
 }
+#cart-toggle {
+    display: none;
+}
 .accordion-btn {
     cursor: pointer; 
     font-size: 1.5rem; 
     order: -1;
+}
+.cart-btn {
+    cursor: pointer; 
+    font-size: 1.5rem; 
+    order: 1;
 }
 #menu-toggle:checked + .accordion-btn::after {
     content: '\25BC'; 
