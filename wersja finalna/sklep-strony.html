@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sklep-strony.css">
+    <script src="sklep-strony.js"></script>
+    <title>Sklep strony</title>
+    </head>
+    <body>
+        <header>
+            <input type="checkbox" id="menu-toggle" class="accordion-toggle">
+            <label for="menu-toggle" class="accordion-btn">☰</label>
+            <h1>Sklep</h1>
+            <input type="checkbox" onclick="window.location.href='koszyk.html'" id="cart-toggle" class="cart-toggle">
+            <label for="cart-toggle" class="cart-btn">🛒</label>
+        </header>
+        <main>
+            <div id="menu"></div>
+            <h2>Maskotki</h2>
+                <ul>
+                    <li class="container">
+                        <div>Shelly</div>
+                        <img src="maskotki/shelly.jpg">
+                        <div>Cena = 20 zl</div>
+                        <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'" class="button1">Kup</button>
+                        <button onclick="dodaj_do_koszyka('Shelly','maskotki/shelly.jpg',20)" class="button1">Dodaj do koszyka</button>
+                    </li>
+                    <li class="container">
+                        <div>El Primo</div>
+                        <img src="maskotki/el_primo.jpg">
+                        <div>Cena = 15 zl</div>
+                        <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'" class="button1">Kup</button>
+                        <button onclick="dodaj_do_koszyka('El Primo','maskotki/el_primo.jpg',15)" class="button1">Dodaj do koszyka</button>
+                    </li>
+                    <li class="container">
+                        <div>Spike</div>
+                        <img src="maskotki/spike.jpg">
+                        <div>Cena = 100 zl</div>
+                        <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'" class="button1">Kup</button>
+                        <button onclick="dodaj_do_koszyka('Spike','maskotki/spike.jpg',100)" class="button1">Dodaj do koszyka</button>
+                    </li>
+                    <li class="container">
+                        <div>Crow</div>
+                        <img src="maskotki/crow.jpg">
+                        <div>Cena = 50 zl</div>
+                        <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'" class="button1">Kup</button>
+                        <button onclick="dodaj_do_koszyka('Crow','maskotki/crow.jpg',50)" class="button1">Dodaj do koszyka</button>
+                    </li>
+                    <li class="container">
+                        <div>Poco</div>
+                        <img src="maskotki/poco.jpg">
+                        <div>Cena = 25 zl</div>
+                        <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'" class="button1">Kup</button>
+                        <button onclick="dodaj_do_koszyka('Poco','maskotki/poco.jpg',25)" class="button1">Dodaj do koszyka</button>
+                    </li>
+               </ul>
+        </main>
+    </body>
+</html>
